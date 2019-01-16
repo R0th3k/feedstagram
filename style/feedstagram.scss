@@ -4,7 +4,7 @@ $text-color:white;
 
 $time-animation:1s;
 
-.insta-feed{
+.feedstagram{
     display: flex;
     // display: grid;
     // grid-template-columns: repeat(7,1fr);
@@ -29,7 +29,7 @@ $time-animation:1s;
             background-size: 120% 120%!important;
             transition: background-size $time-animation ease-in;
             
-            & > .insta-feed-item__info{
+            & > .feedstagram-item__info{
                 transform: translateY(0);
                 transition: all ease-in .5s;
             }  

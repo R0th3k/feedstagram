@@ -7,7 +7,7 @@ var feed = new Instafeed({
     limit: 3,
     resolution: "standard_resolution",
     useHttp: "true",
-    template: '<a class="insta-feed-item" href="{{link}}" target="_blank" style="background:url({{image}}) no-repeat center center;"><div class="insta-feed-item__info"> {{caption}} {{likes}} {{comments}} </div></a>'
+    template: '<a class="feedstagram-item" href="{{link}}" target="_blank" style="background:url({{image}}) no-repeat center center;"><div class="feedstagram-item__info"> {{caption}} {{likes}} {{comments}} </div></a>'
 });
 feed.run();
 
