@@ -20,6 +20,15 @@ $time-animation:1s;
     overflow-y: hidden;
     display: flex;
     font-family: 'Raleway', sans-serif;
+    position: relative;
+    &::after{
+        content:'Desliza →';
+        position: absolute;
+        top:.5rem;
+        left: .5rem;
+        font-size: 14px;
+        text-shadow: 1px 1px 0 white;
+    }
     }
     
     &-item{

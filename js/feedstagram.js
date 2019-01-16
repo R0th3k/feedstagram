@@ -8,7 +8,7 @@ var feed = new Instafeed({
     //Instagram acces Token generator:
     //http://instagram.pixelunion.net/
     accessToken: "8636519331.1677ed0.f095d3f928414041bcfe639937cf9851",
-    limit: 3,
+    limit: 7,
     resolution: "standard_resolution",
     useHttp: "true",
     template: '<a class="feedstagram-item" href="{{link}}" target="_blank" style="background:url({{image}}) no-repeat center center;"><div class="feedstagram-item__info"> <p>{{caption}}</p> <p><i class="fas fa-heart"></i> {{likes}}</p> <p><i class="fas fa-comments"></i> {{comments}}</p>  </div></a>'
