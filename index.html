@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="minireset.css">
-    <link rel="stylesheet" href="insta-feed.css">
+    <link rel="stylesheet" href="style/minireset.css">
+    <link rel="stylesheet" href="style/feedstagram.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,25 +15,7 @@
       <div id="btn-instafeed-load" class="insta-feed-item insta-feed-item--more">Cargar más</div>
     </div> 
 
-    <script src="./instafeed.min.js"></script>
-    <script type="text/javascript">
-        var feed = new Instafeed({
-            // get: 'tagged',
-            // tagName: 'awesome',
-            get: "user",
-            userId: 8636519331,
-            accessToken: "8636519331.1677ed0.f095d3f928414041bcfe639937cf9851",
-            limit: 3,
-            resolution: "standard_resolution",
-            useHttp: "true",
-            template: '<a class="insta-feed-item" href="{{link}}" target="_blank" style="background:url({{image}}) no-repeat center center;"><div class="insta-feed-item__info"> {{caption}} {{likes}} {{comments}} </div></a>'
-        });
-        feed.run();
-
-        var btnInstafeedLoad = document.getElementById("btn-instafeed-load");
-        btnInstafeedLoad.addEventListener("click", function() {
-          feed.next()
-        });
-    </script>
+    <script src="js/lib/instafeed.min.js"></script>
+    <script src="js/feedstagram.min.js"></script>
 </body>
 </html>

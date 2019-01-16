@@ -1,0 +1,56 @@
+.insta-feed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .insta-feed-wrapper {
+    width: 100%;
+    overflow-y: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .insta-feed-item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 300px;
+    flex: 0 0 300px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    -webkit-transition: background-size 1s ease-in;
+    -o-transition: background-size 1s ease-in;
+    transition: background-size 1s ease-in;
+    background-size: 100% 100% !important;
+    cursor: pointer; }
+    .insta-feed-item:hover {
+      background-size: 120% 120% !important;
+      -webkit-transition: background-size 1s ease-in;
+      -o-transition: background-size 1s ease-in;
+      transition: background-size 1s ease-in; }
+      .insta-feed-item:hover > .insta-feed-item__info {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transition: all ease-in .5s;
+        -o-transition: all ease-in .5s;
+        transition: all ease-in .5s; }
+    .insta-feed-item img {
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover; }
+    .insta-feed-item__info {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 230, 140, 0.75)), to(rgba(255, 99, 71, 0.75)));
+      background: -webkit-linear-gradient(rgba(240, 230, 140, 0.75), rgba(255, 99, 71, 0.75));
+      background: -o-linear-gradient(rgba(240, 230, 140, 0.75), rgba(255, 99, 71, 0.75));
+      background: linear-gradient(rgba(240, 230, 140, 0.75), rgba(255, 99, 71, 0.75));
+      background-blend-mode: multiply;
+      padding: 1rem;
+      height: 100%;
+      -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      transform: translateY(100%);
+      color: white;
+      -webkit-transition: all ease-out .5s;
+      -o-transition: all ease-out .5s;
+      transition: all ease-out .5s; }
+      .insta-feed-item__info a {
+        color: white;
+        text-decoration: none; }
