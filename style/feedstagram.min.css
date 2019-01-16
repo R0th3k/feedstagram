@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 .feedstagram {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7,7 +8,8 @@
     overflow-y: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    font-family: 'Raleway', sans-serif; }
   .feedstagram-item {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 300px;
@@ -19,7 +21,10 @@
     -o-transition: background-size 1s ease-in;
     transition: background-size 1s ease-in;
     background-size: 100% 100% !important;
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: none; }
+    .feedstagram-item:visited {
+      text-decoration: none; }
     .feedstagram-item:hover {
       background-size: 120% 120% !important;
       -webkit-transition: background-size 1s ease-in;
@@ -37,10 +42,9 @@
       -o-object-fit: cover;
       object-fit: cover; }
     .feedstagram-item__info {
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 230, 140, 0.75)), to(rgba(255, 99, 71, 0.75)));
-      background: -webkit-linear-gradient(rgba(240, 230, 140, 0.75), rgba(255, 99, 71, 0.75));
-      background: -o-linear-gradient(rgba(240, 230, 140, 0.75), rgba(255, 99, 71, 0.75));
-      background: linear-gradient(rgba(240, 230, 140, 0.75), rgba(255, 99, 71, 0.75));
+      background: -webkit-linear-gradient(45deg, rgba(29, 111, 163, 0.85), rgba(101, 253, 240, 0.85));
+      background: -o-linear-gradient(45deg, rgba(29, 111, 163, 0.85), rgba(101, 253, 240, 0.85));
+      background: linear-gradient(45deg, rgba(29, 111, 163, 0.85), rgba(101, 253, 240, 0.85));
       background-blend-mode: multiply;
       padding: 1rem;
       height: 100%;
@@ -50,7 +54,51 @@
       color: white;
       -webkit-transition: all ease-out .5s;
       -o-transition: all ease-out .5s;
-      transition: all ease-out .5s; }
-      .feedstagram-item__info a {
-        color: white;
-        text-decoration: none; }
+      transition: all ease-out .5s;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .feedstagram-item--more {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      position: relative; }
+      .feedstagram-item--more i {
+        font-size: 5rem;
+        color: rgba(29, 111, 163, 0.85);
+        z-index: 2; }
+      .feedstagram-item--more:hover:before {
+        width: 30rem;
+        height: 30rem;
+        -webkit-transition: all ease-in .33s;
+        -o-transition: all ease-in .33s;
+        transition: all ease-in .33s;
+        opacity: 1; }
+      .feedstagram-item--more:before {
+        content: '';
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: rgba(101, 253, 240, 0.85);
+        position: absolute;
+        -webkit-transition: all ease-in .33s;
+        -o-transition: all ease-in .33s;
+        transition: all ease-in .33s;
+        z-index: 1;
+        opacity: 0; }
